@@ -48,9 +48,9 @@ importers:
       ohash:
         specifier: ^1.1.3
         version: 1.1.3
-      radix-vue:
-        specifier: ^1.9.2
-        version: 1.9.2(vue@3.4.35(typescript@5.5.4))
+      reka-ui:
+        specifier: ^0.0.2
+        version: 0.0.2(vue@3.4.35(typescript@5.5.4))
       scule:
         specifier: ^1.3.0
         version: 1.3.0
@@ -151,9 +151,6 @@ importers:
       '@nuxt/ui':
         specifier: workspace:*
         version: link:..
-      '@nuxt/ui-pro':
-        specifier: file:../../ui-pro2
-        version: file:../ui-pro2(magicast@0.3.4)(rollup@4.20.0)(vue@3.4.35(typescript@5.5.4))
       '@nuxtjs/plausible':
         specifier: ^1.0.1
         version: 1.0.1(magicast@0.3.4)(rollup@4.20.0)
@@ -1201,10 +1198,6 @@ packages:
         optional: true
       vitest:
         optional: true
-
-  '@nuxt/ui-pro@file:../ui-pro2':
-    resolution: {directory: ../ui-pro2, type: directory}
-    engines: {node: '>=v16.20.2'}
 
   '@nuxt/vite-builder@3.12.3':
     resolution: {integrity: sha512-8xfeOgSUaXTYgLx1DA5qEFwU3/vL5DVAIv8sgPn2rnmB50nPJVXrVa+tXhO0I1Q8L4ycXRqq2dxOPGq8CSYo+A==}
@@ -2692,7 +2685,7 @@ packages:
     resolution: {integrity: sha512-7CEBgcMjVmitjYo5q8JTJVra6X5mQ20uTThdK+0kR7UEaDrAWEQcRiBtWJzga4eRpP6afNwwLsX2SET2JhVB1Q==}
 
   concat-map@0.0.1:
-    resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
+    resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
 
   concat-stream@2.0.0:
     resolution: {integrity: sha512-MWufYdFw53ccGjCA+Ol7XJYpAlW6/prSMzuPOTRnJGcGzuhLn4Scrz7qf6o8bROZ514ltazcIFJZevcfbo0x7A==}
@@ -2886,7 +2879,7 @@ packages:
     hasBin: true
 
   cssfilter@0.0.10:
-    resolution: {integrity: sha512-FAaLDaplstoRsDR8XGYH51znUN0UY7nMc6Z9/fvE8EXGwvJE9hu7W2vHwx1+bd6gCYnln9nLbzxFTrcO9YQDZw==}
+    resolution: {integrity: sha1-xtJnJjKi5cg+AT5oZKQs6N79IK4=}
 
   cssnano-preset-default@7.0.4:
     resolution: {integrity: sha512-jQ6zY9GAomQX7/YNLibMEsRZguqMUGuupXcEk2zZ+p3GUxwCAsobqPYE62VrJ9qZ0l9ltrv2rgjwZPBIFIjYtw==}
@@ -3118,7 +3111,7 @@ packages:
     hasBin: true
 
   ee-first@1.1.1:
-    resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
+    resolution: {integrity: sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=}
 
   electron-to-chromium@1.5.4:
     resolution: {integrity: sha512-orzA81VqLyIGUEA77YkVA1D+N+nNfl2isJVjjmOyrlxuooZ19ynb+dOlaDTqd/idKRS9lDCSBmtzM+kyCsMnkA==}
@@ -5346,6 +5339,11 @@ packages:
   rehype-sort-attributes@5.0.0:
     resolution: {integrity: sha512-6tJUH4xHFcdO85CZRwAcEtHNCzjZ9V9S0VZLgo1pzbN04qy8jiVCZ3oAxDmBVG3Rth5b1xFTDet5WG/UYZeJLQ==}
 
+  reka-ui@0.0.2:
+    resolution: {integrity: sha512-dEf+Q7Mg3vdEuuC+FcpPCEQsc46kN1VU7+tFxZbj847+kM4QS2qcRR7MJ9Zqq5caHHMizzac8K46S8zCN1OG2Q==}
+    peerDependencies:
+      vue: '>= 3.2.0'
+
   release-it@17.6.0:
     resolution: {integrity: sha512-EE34dtRPL7BHpYQC7E+zAU8kjkyxFHxLk5Iqnmn/5nGcjgOQu34Au29M2V9YvxiP3tZbIlEn4gItEzu7vAPRbw==}
     engines: {node: ^18.18.0 || ^20.9.0 || ^22.0.0}
@@ -5615,9 +5613,6 @@ packages:
 
   smob@1.5.0:
     resolution: {integrity: sha512-g6T+p7QO8npa+/hNx9ohv1E5pVCmWrVCUzUXJyLdMmftX6ER0oiWY/w9knEonLpnOp6b6FenKnMfR8gqwWdwig==}
-
-  smooth-dnd@0.12.1:
-    resolution: {integrity: sha512-Dndj/MOG7VP83mvzfGCLGzV2HuK1lWachMtWl/Iuk6zV7noDycIBnflwaPuDzoaapEl3Pc4+ybJArkkx9sxPZg==}
 
   socket.io-client@4.7.5:
     resolution: {integrity: sha512-sJ/tqHOCe7Z50JCBCXrsY3I2k03iOiUe+tj1OmKeD2lXPiGH/RUCdTZFoqVyN7l1MnpIzPrGtLcijffmeouNlQ==}
@@ -5895,7 +5890,7 @@ packages:
     engines: {node: '>=0.6'}
 
   toposort@2.0.2:
-    resolution: {integrity: sha512-0a5EOkAUp8D4moMi2W8ZF8jcga7BgZd91O/yabJCFY8az+XSzeGyTKs0Aoo897iV1Nj6guFq8orWDS96z91oGg==}
+    resolution: {integrity: sha1-riF2gXXRVZ1IvvNUILL0li8JwzA=}
 
   totalist@3.0.1:
     resolution: {integrity: sha512-sf4i37nQ2LBx4m3wB74y+ubopq6W/dIzXg0FDGjsYnZHVa1Da8FH853wlL2gtUhg+xJXjfk3kUZS3BRoQeoQBQ==}
@@ -6386,11 +6381,6 @@ packages:
     hasBin: true
     peerDependencies:
       typescript: '>=5.0.0'
-
-  vue3-smooth-dnd@0.0.6:
-    resolution: {integrity: sha512-CH9ZZhEfE7qU1ef2rlfgBG+nZtQX8PnWlspB2HDDz1uVGU7fXM0Pr65DftBMz4X81S+edw2H+ZFG6Dyb5J81KA==}
-    peerDependencies:
-      vue: ^3.0.11
 
   vue@3.4.35:
     resolution: {integrity: sha512-+fl/GLmI4GPileHftVlCdB7fUL4aziPcqTudpTGXCT8s+iZWuOCeNEB5haX6Uz2IpRrbEXOgIFbe+XciCuGbNQ==}
@@ -7811,27 +7801,6 @@ snapshots:
       - magicast
       - rollup
       - supports-color
-
-  '@nuxt/ui-pro@file:../ui-pro2(magicast@0.3.4)(rollup@4.20.0)(vue@3.4.35(typescript@5.5.4))':
-    dependencies:
-      '@nuxt/kit': 3.12.3(magicast@0.3.4)(rollup@4.20.0)
-      '@nuxt/schema': 3.12.3(rollup@4.20.0)
-      '@nuxt/ui': 'link:'
-      '@vueuse/core': 10.11.0(vue@3.4.35(typescript@5.5.4))
-      consola: 3.2.3
-      defu: 6.1.4
-      git-url-parse: 14.1.0
-      ofetch: 1.3.4
-      parse-git-config: 3.0.0
-      pkg-types: 1.1.3
-      scule: 1.3.0
-      vue3-smooth-dnd: 0.0.6(vue@3.4.35(typescript@5.5.4))
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - magicast
-      - rollup
-      - supports-color
-      - vue
 
   '@nuxt/vite-builder@3.12.3(@types/node@22.1.0)(eslint@9.8.0)(lightningcss@1.25.1)(magicast@0.3.4)(optionator@0.9.4)(rollup@3.29.4)(terser@5.31.3)(typescript@5.5.4)(vue-tsc@2.0.29(typescript@5.5.4))(vue@3.4.35(typescript@5.5.4))':
     dependencies:
@@ -13043,6 +13012,23 @@ snapshots:
       '@types/hast': 3.0.4
       unist-util-visit: 5.0.0
 
+  reka-ui@0.0.2(vue@3.4.35(typescript@5.5.4)):
+    dependencies:
+      '@floating-ui/dom': 1.6.8
+      '@floating-ui/vue': 1.1.2(vue@3.4.35(typescript@5.5.4))
+      '@internationalized/date': 3.5.5
+      '@internationalized/number': 3.5.3
+      '@tanstack/vue-virtual': 3.8.5(vue@3.4.35(typescript@5.5.4))
+      '@vueuse/core': 10.11.0(vue@3.4.35(typescript@5.5.4))
+      '@vueuse/shared': 10.11.0(vue@3.4.35(typescript@5.5.4))
+      aria-hidden: 1.2.4
+      defu: 6.1.4
+      fast-deep-equal: 3.1.3
+      nanoid: 5.0.7
+      vue: 3.4.35(typescript@5.5.4)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
   release-it@17.6.0(typescript@5.5.4):
     dependencies:
       '@iarna/toml': 2.2.5
@@ -13418,8 +13404,6 @@ snapshots:
   smart-buffer@4.2.0: {}
 
   smob@1.5.0: {}
-
-  smooth-dnd@0.12.1: {}
 
   socket.io-client@4.7.5:
     dependencies:
@@ -14340,11 +14324,6 @@ snapshots:
       '@vue/language-core': 2.0.29(typescript@5.5.4)
       semver: 7.6.3
       typescript: 5.5.4
-
-  vue3-smooth-dnd@0.0.6(vue@3.4.35(typescript@5.5.4)):
-    dependencies:
-      smooth-dnd: 0.12.1
-      vue: 3.4.35(typescript@5.5.4)
 
   vue@3.4.35(typescript@5.5.4):
     dependencies:
