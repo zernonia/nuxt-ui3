@@ -3,7 +3,7 @@ description: A set of tab panels that are displayed one at a time.
 links:
   - label: Tabs
     icon: i-custom-radix-vue
-    to: https://www.radix-vue.com/components/tabs.html
+    to: https://reka-ui.com/docs/components/tabs.html
   - label: GitHub
     icon: i-simple-icons-github
     to: https://github.com/benjamincanac/ui3/tree/dev/src/runtime/components/Tabs.vue

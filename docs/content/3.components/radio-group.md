@@ -4,7 +4,7 @@ description: A set of radio buttons to select a single option from a list.
 links:
   - label: RadioGroup
     icon: i-custom-radix-vue
-    to: https://www.radix-vue.com/components/radio-group.html
+    to: https://reka-ui.com/docs/components/radio-group.html
   - label: GitHub
     icon: i-simple-icons-github
     to: https://github.com/benjamincanac/ui3/tree/dev/src/runtime/components/RadioGroup.vue

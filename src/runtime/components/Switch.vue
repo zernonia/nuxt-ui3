@@ -1,6 +1,6 @@
 <script lang="ts">
 import { tv, type VariantProps } from 'tailwind-variants'
-import type { SwitchRootProps } from 'radix-vue'
+import type { SwitchRootProps } from 'reka-ui'
 import type { AppConfig } from '@nuxt/schema'
 import _appConfig from '#build/app.config'
 import theme from '#build/ui/switch'
@@ -52,7 +52,7 @@ export interface SwitchSlots {
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import { SwitchRoot, SwitchThumb, useForwardProps, Label } from 'radix-vue'
+import { SwitchRoot, SwitchThumb, useForwardProps, Label } from 'reka-ui'
 import { reactivePick } from '@vueuse/core'
 import { useId, useAppConfig } from '#imports'
 import { useFormField } from '../composables/useFormField'
@@ -91,13 +91,13 @@ function onUpdate(value: any) {
     <div :class="ui.container({ class: props.ui?.container })">
       <SwitchRoot
         :id="id"
-        v-model:checked="modelValue"
+        v-model="modelValue"
         :default-checked="defaultValue"
         v-bind="rootProps"
         :name="name"
         :disabled="disabled || loading"
         :class="ui.base({ class: props.ui?.base })"
-        @update:checked="onUpdate"
+        @update:model-value="onUpdate"
       >
         <SwitchThumb :class="ui.thumb({ class: props.ui?.thumb })">
           <UIcon v-if="loading" :name="loadingIcon || appConfig.ui.icons.loading" :class="ui.icon({ class: props.ui?.icon, checked: true, unchecked: true })" />

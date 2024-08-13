@@ -56,7 +56,7 @@ export interface ${upperName}Slots {
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import { Primitive } from 'radix-vue'
+import { Primitive } from 'reka-ui'
 
 const props = withDefaults(defineProps<${upperName}Props>(), { as: 'div' })
 defineSlots<${upperName}Slots>()
@@ -73,7 +73,7 @@ const ui = computed(() => tv({ extend: ${camelName}, slots: props.ui })())
       : `
 <script lang="ts">
 import { tv, type VariantProps } from 'tailwind-variants'
-import type { ${upperName}RootProps, ${upperName}RootEmits } from 'radix-vue'
+import type { ${upperName}RootProps, ${upperName}RootEmits } from 'reka-ui'
 import type { AppConfig } from '@nuxt/schema'
 import _appConfig from '#build/app.config'
 import theme from '#build/${path}/${prose ? 'prose/' : ''}${content ? 'content/' : ''}${kebabName}'
@@ -96,7 +96,7 @@ export interface ${upperName}Slots {}
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import { ${upperName}Root, useForwardPropsEmits } from 'radix-vue'
+import { ${upperName}Root, useForwardPropsEmits } from 'reka-ui'
 import { reactivePick } from '@vueuse/core'
 
 const props = defineProps<${upperName}Props>()

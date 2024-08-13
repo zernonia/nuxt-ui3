@@ -4,7 +4,7 @@ description: A command palette to search and execute commands with full-text sea
 links:
   - label: Combobox
     icon: i-custom-radix-vue
-    to: https://www.radix-vue.com/components/combobox.html
+    to: https://reka-ui.com/docs/components/combobox.html
   - label: GitHub
     icon: i-simple-icons-github
     to: https://github.com/benjamincanac/ui3/tree/dev/src/runtime/components/CommandPalette.vue

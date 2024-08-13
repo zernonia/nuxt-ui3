@@ -1,5 +1,5 @@
 <script lang="ts">
-import type { ConfigProviderProps, TooltipProviderProps } from 'radix-vue'
+import type { ConfigProviderProps, TooltipProviderProps } from 'reka-ui'
 import type { ToasterProps } from '../types'
 
 export interface AppProps extends ConfigProviderProps {
@@ -14,7 +14,7 @@ export interface AppSlors {
 
 <script setup lang="ts">
 import { toRef } from 'vue'
-import { ConfigProvider, TooltipProvider, useForwardProps } from 'radix-vue'
+import { ConfigProvider, TooltipProvider, useForwardProps } from 'reka-ui'
 import { reactivePick } from '@vueuse/core'
 import { useId } from '#imports'
 import UToaster from './Toaster.vue'

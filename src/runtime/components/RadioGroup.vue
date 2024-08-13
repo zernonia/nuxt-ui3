@@ -1,6 +1,6 @@
 <script lang="ts">
 import { tv, type VariantProps } from 'tailwind-variants'
-import type { RadioGroupRootProps, RadioGroupRootEmits, RadioGroupItemProps } from 'radix-vue'
+import type { RadioGroupRootProps, RadioGroupRootEmits, RadioGroupItemProps } from 'reka-ui'
 import type { AppConfig } from '@nuxt/schema'
 import _appConfig from '#build/app.config'
 import theme from '#build/ui/radio-group'
@@ -51,7 +51,7 @@ export interface RadioGroupSlots<T> {
 
 <script setup lang="ts" generic="T extends RadioGroupItem | AcceptableValue">
 import { computed } from 'vue'
-import { RadioGroupRoot, RadioGroupItem, RadioGroupIndicator, Label, useForwardPropsEmits } from 'radix-vue'
+import { RadioGroupRoot, RadioGroupItem, RadioGroupIndicator, Label, useForwardPropsEmits } from 'reka-ui'
 import { reactivePick } from '@vueuse/core'
 import { useId } from '#imports'
 import { useFormField } from '../composables/useFormField'

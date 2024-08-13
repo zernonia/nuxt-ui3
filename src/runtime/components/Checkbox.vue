@@ -1,7 +1,7 @@
 <script lang="ts">
 import type { InputHTMLAttributes } from 'vue'
 import { tv, type VariantProps } from 'tailwind-variants'
-import type { CheckboxRootProps } from 'radix-vue'
+import type { CheckboxRootProps } from 'reka-ui'
 import type { AppConfig } from '@nuxt/schema'
 import _appConfig from '#build/app.config'
 import theme from '#build/ui/checkbox'
@@ -47,7 +47,7 @@ export interface CheckboxSlots {
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import { CheckboxRoot, CheckboxIndicator, Label, useForwardProps } from 'radix-vue'
+import { CheckboxRoot, CheckboxIndicator, Label, useForwardProps } from 'reka-ui'
 import { reactivePick } from '@vueuse/core'
 import { useId, useAppConfig } from '#imports'
 import { useFormField } from '../composables/useFormField'
@@ -97,13 +97,13 @@ function onUpdate(value: any) {
     <div :class="ui.container({ class: props.ui?.container })">
       <CheckboxRoot
         :id="id"
-        v-model:checked="checked"
+        v-model="checked"
         :default-checked="defaultValue"
         v-bind="rootProps"
         :name="name"
         :disabled="disabled"
         :class="ui.base({ class: props.ui?.base })"
-        @update:checked="onUpdate"
+        @update:model-value="onUpdate"
       >
         <CheckboxIndicator as-child>
           <UIcon v-if="indeterminate" :name="indeterminateIcon || appConfig.ui.icons.minus" :class="ui.icon({ class: props.ui?.icon })" />

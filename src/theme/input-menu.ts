@@ -6,7 +6,7 @@ export default (options: Required<ModuleOptions>) => {
   return defu({
     slots: {
       arrow: 'fill-gray-200 dark:fill-gray-800',
-      content: 'max-h-60 w-[--radix-popper-anchor-width] bg-white dark:bg-gray-900 shadow-lg rounded-md ring ring-gray-200 dark:ring-gray-800 overflow-hidden data-[state=open]:animate-[scale-in_100ms_ease-out] data-[state=closed]:animate-[scale-out_100ms_ease-in]',
+      content: 'max-h-60 w-[--reka-popper-anchor-width] bg-white dark:bg-gray-900 shadow-lg rounded-md ring ring-gray-200 dark:ring-gray-800 overflow-hidden data-[state=open]:animate-[scale-in_100ms_ease-out] data-[state=closed]:animate-[scale-out_100ms_ease-in]',
       viewport: 'divide-y divide-gray-200 dark:divide-gray-800 scroll-py-1',
       group: 'p-1 isolate',
       empty: 'py-2 text-center text-sm text-gray-500 dark:text-gray-400',
